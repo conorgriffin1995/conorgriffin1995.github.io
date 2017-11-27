@@ -1,12 +1,170 @@
 body {
     padding-bottom: 40px;
-    color: #887777;
-  }
+    color: black;
+}
 
-/* CUSTOMIZE THE NAVBAR
+/* CUSTOMIZE THE NAVBAR 1
 -------------------------------------------------- */
+/* 1 inner-wrapper */
+#page-header{
+  background-color: white;
+}
+#page-header{
+  display: block;
+  position: relative;
+  background: #fff;
+}
+#page-header .inner-wrapper{
+  background: white;
+}
+@media(min-width:1200px){
+  .container {
+    width: 1170px;
+  }
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+}
+.row-fluid{
+  width: 100%;
+}
+@media (min-width:1200px){
+  .row-fluid [class*="span"]:first-child{
+    margin-left: 0;
+  }
+  .row-fluid .span12{
+    width: 100%;
+  }
+  .row-fluid [class*="span"]{
+    display: block;
+    min-height: 30px;
+    box-sizing: border-box;
+  }
+}
+.row-fluid [class*="span"]{
+  float: left;
+}
+.btn.btn-navbar{
+  float:right;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  background: blue;
+  border: 0;
+  box-shadow: none;
+  transition: ease-in 0.2s;
+}
+#site-logo{
+  display: block;
+  float: left;
+  max-width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.user-menu-wrapper{
+  float: right;
+  margin-top: 15px;
+  position: sticky;
+}
+.nav{
+  margin-left: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.nav > li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.nav.user-menu .dropdown-toggle{
+  border-radius: 5px 50px 50px 5px;
+  padding-left: 10px;
+}
+.nav.user-menu>li>a {
+  color: #004c93;
+  display: block;
+  background: black
+}
+.nav.user-menu .userpicture{
+  margin: 0 0 0 10px;
+  border: 5px solid #004990;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  float: none;
+  display: inline-block;
+}
+.dropdown-menu{
+  border: 0px solid transparent;
+  border-radius: 0px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  margin-top: 0;
+  padding: 0px 0px;
+  border-bottom: 2px solid #001e3c;
+  z-index: 1001;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  min-width: 160px;
+}
+
+/* 2 container-fluid */
+.container-fluid{
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.row-fluid{
+  width: 100%;
+}
+#rainbow .c {
+  height: 10px;
+  min-height: 10px;
+  width: 25%;
+  float: left;
+  background: rgb(11, 29, 105);
+}
+
+/* 3 main-menu */
+.main-menu-wrapper{
+  background: black;
+}
+.main-menu-wrapper .nav > li > a{
+  color: white;
+}
+.main-menu-wrapper .nav > li > a:hover{
+  background: rgb(11, 29, 105);
+}
+#navwrap{
+  clear: both;
+  position: relative;
+  border-bottom: 0;
+}
+
+#searchsite button {
+  position: relative;
+
+  color: white;
+
+  background: transparent;
+  border: 0 none;
+  box-shadow: none;
+}
+
+/* CUSTOMIZE THE NAVBAR 3
+-------------------------------------------------- */
+/* 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar {
+/* .navbar {
   background-color: rgb(213, 113, 113);
   border-color: rgb(213, 113, 113);
   position: sticky;
@@ -40,7 +198,44 @@ body {
 
 .navbar > .container > .navbar-collapse > .nav > li a:hover {
   color: rgb(106, 59, 59);
+} */
+
+/* CUSTOMIZE THE NAVBAR 2
+-------------------------------------------------- */
+/* html {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 12px;
 }
+.clearfix .container{
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  height: auto;
+  background: black;
+}
+.header-right{
+  position: relative;
+  color: white;
+
+}
+.header-right{
+  width: 100%;
+  text-align: right;
+}
+.nav > li a{
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 40px;
+  padding: 0 2em;
+  -webkit-transition: all .3s ease;
+}
+.nav > li a:hover{
+  background: rgba(255,255,255,.9);
+  color: black;
+} */
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
