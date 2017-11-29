@@ -32,238 +32,149 @@
 
   </head>
   <body>
-
     <!-- Navbar
     ================================================== -->
-    <!--Nav1-->
-    <div id="page-header" class="header-layout1 zoomable container-fluid">
-        <!--Inner wrapper-->
-        <div class="inner-wrapper">
-          <div class="container">
-            <div class="row-fluid">
-              <header class="span12" role="banner">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a>
-                <a id="site-logo" href="#QuickHeadings">
-                  <img src="Images/conorgriffin.jpg" alt="Conor placeholder image">
-                </a>
-                <div class="user-menu-wrapper nav-collapse collapse">
-                 <ul class="nav navbar-nav navbar-right user-menu">
-                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Conor Griffin">
-                    <i class="fa fa-chevron-down"></i>
-                    Conor Griffin                 
-                    <img src="Images/conorgriffin.jpg" alt="Conor placeholder image" title="Conor Griffin" class="userpicture">
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a title="Interests" href="#Interests">
-                          <i class="fa fa-futbol-o"></i>
-                          Interests
-                        </a>
-                      </li>
-                      <li>
-                        <a title="Contact Me" href="#Contact">
-                          <i class="fa fa-phone"></i>
-                          Contact Me
-                        </a>
-                      </li>
-                      <li>
-                        <a title="Send Email" href="#Contact">
-                          <i class="fa fa-envelope"></i>
-                          Send Email
-                        </a>
-                      </li>
-                      <li class="dropdown-header">Links</li>
-                      <li>
-                        <a title="Github" href="https://github.com/conorgriffin1995">
-                          <i class="fa fa-github"></i>
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a title="LinkedIn" href="https://www.linkedin.com/in/conorgriffin2/">
-                          <i class="fa fa-linkedin"></i>
-                          LinkedIn
-                        </a>
-                      </li>
-                    </ul>                   
-                   </li>
-                 </ul>
-                </div>
-              </header>
+    <div class="container-fluid">
+      <!--banner 1-->
+      <div id="banner" class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <a id="site-logo" href="#QuickHeadings">
+              <img src="Images/terminal-icon.png" alt="Conor placeholder image" height="80px" width="80px">
+            </a>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="row-fluid" style="padding-left:60px; padding-top:30px;">
+              <h1>WELCOME TO MY PORTFOLIO SITE!</h1>
             </div>
           </div>
-        </div>
-
-        <!--Container fluid-->
-        <div class="container-fluid" id="rainbow">
-          <div class="row-fluid">
-            <div class="c c1"></div>
-            <div class="c c2"></div>
-            <div class="c c3"></div>
-            <div class="c c4"></div>
-          </div>
-        </div>
-
-        <!--main menu-->
-        <div class="main-menu-wrapper">
-          <div class="container" id="navwrap">
-            <div class="navbar">
-              <nav role="navigation" class="navbar-inner">
-                <div class="container-fluid">
-                  <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li>
-                          <a href="#" title="Home">
-                            <i class="fa fa-home"></i>
-                            Home
-                          </a>                        
-                        </li>
-                        <li>
-                          <a href="#About" title="About">
-                            <i class="fa fa-user"></i>
-                            About
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#Education" title="Education">
-                            <i class="fa fa-book"></i>
-                            Education
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#Skills" title="Skills">
-                            <i class="fa fa-terminal"></i>
-                            Skills
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#WorkExperience" title="Work Experience">
-                            <i class="fa fa-building"></i>
-                            Work Experience
-                          </a>
-                        </li>
-                    </ul>
-                    <form id="searchsite" class="navbar-form navbar-right">                     
-                      <input type="text" class="form-control" placeholder="Search...">
-                      <button class="fa fa-search" type="submit"></button>                                        
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-    </div>
-    
-    <!--Nav2-->
-    <!-- <header class="clearfix">
-        <div class="container"> 
-          <nav class="nav navbar-nav">
-            <li><a href="#QuickHeadings" class="glyphicon glyphicon-cloud"> Conor Griffin</a></li>  
-            <li><a href="#" class="glyphicon glyphicon-home"> Home</a></li>
-            <li><a href="#About" class="glyphicon glyphicon-user"> About</a></li>
-            <li><a href="#Education" class="glyphicon glyphicon-book"> Education</a></li>
-            <li><a href="#Skills" class="glyphicon glyphicon-file"> IT Skills</a></li>
-            <li><a href="#WorkExperience" class="glyphicon glyphicon-work"> Work Experience</a></li>           
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#Interests">Interests</a></li>
-                  <li><a href="#Contact">Contact Me</a></li>
-                  <li><a href="#Contact">Send Email</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Links</li>
-                  <li><a href="https://github.com/conorgriffin1995">Github</a></li>
-                  <li><a href="https://www.linkedin.com/in/conorgriffin2/">LinkedIn</a></li>
-                </ul>
-            </li>
-            <form class="navbar-form navbar-right">
-                <input type="text" class="form-control" placeholder="Search...">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </nav>
-        </div>
-    </header> -->
-
-    <!--Nav3-->
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#QuickHeadings" class="glyphicon glyphicon-cloud">Conor Griffin</a>
-        </div>  
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-              <li><a href="#" class="glyphicon glyphicon-home"> Home</a></li>
-              <li><a href="#About" class="glyphicon glyphicon-user"> About</a></li>
-              <li><a href="#Education" class="glyphicon glyphicon-book"> Education</a></li>
-              <li><a href="#Skills" class="glyphicon glyphicon-file"> IT Skills</a></li>
-              <li><a href="#WorkExperience" class="glyphicon glyphicon-work"> Work Experience</a></li>
+          <div class="col-md-3">
+            <ul class="nav navbar-nav">
               <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#Interests">Interests</a></li>
-                    <li><a href="#Contact">Contact Me</a></li>
-                    <li><a href="#Contact">Send Email</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Links</li>
-                    <li><a href="https://github.com/conorgriffin1995">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/conorgriffin2/">LinkedIn</a></li>
-                  </ul>
-              </li>                   
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>           
-        </div>    
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Conor Griffin">
+                  <i class="fa fa-chevron-down"></i>
+                  Conor Griffin
+                  <img src="Images/conorgriffin.jpg" alt="Conor placeholder image" title="Conor Griffin" class="userpicture">
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a title="Interests" href="#Interests">
+                      <i class="fa fa-futbol-o"></i>
+                      Interests
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Contact Me" href="#Contact">
+                      <i class="fa fa-phone"></i>
+                      Contact Me
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Send Email" href="#Contact">
+                      <i class="fa fa-envelope"></i>
+                      Send Email
+                    </a>
+                  </li>
+                  <li class="dropdown-header">Links</li>
+                  <li>
+                    <a title="Github" href="https://github.com/conorgriffin1995">
+                      <i class="fa fa-github"></i>
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/conorgriffin2/">
+                      <i class="fa fa-linkedin"></i>
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav> -->
+      <!--line 2-->
+      <div id="line" class="container-fluid">
+        <div class="row-fluid">
+          <div class="c c1"></div>
+          <div class="c c2"></div>
+          <div class="c c3"></div>
+          <div class="c c4"></div>
+        </div>
+      </div>
+      <!--menu 3-->
+      <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <ul class="nav navbar-nav" id="nav">
+          <li>
+            <a href="#">
+              <i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#About">
+              <i class="fa fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#Education">
+              <i class="fa fa-book"></i> Education</a>
+          </li>
+          <li>
+            <a href="#Skills">
+              <i class="fa fa-terminal"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#WorkExperience">
+              <i class="fa fa-building"></i> Work Experience</a>
+          </li>
+        </ul>
+        <form id="searchsite" class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
 
     <!-- Carousel
     ================================================== -->
     <div id="InfoCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#InfoCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#InfoCarousel" data-slide-to="1"></li>
-          <li data-target="#InfoCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img class="first-slide" src="Images/logoCV.jpg" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <a class="btn btn-lg btn-primary" href="CV/ConorGriffinCV.doc" download="ConorGriffinCV.doc">Download CV</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img class="second-slide" src="Images/DSP.png" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img class="third-slide" src="Images/ITTallaght.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <a class="btn btn-lg btn-primary" href="#Education" role="button">College results</a>
-              </div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#InfoCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#InfoCarousel" data-slide-to="1"></li>
+        <li data-target="#InfoCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="Images/logoCV.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <a class="btn btn-lg btn-primary" href="CV/ConorGriffinCV.doc" download="ConorGriffinCV.doc">Download CV</a>
             </div>
           </div>
         </div>
-       
+        <div class="item">
+          <img class="second-slide" src="Images/DSP.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="Images/ITTallaght.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <a class="btn btn-lg btn-primary" href="#Education" role="button">College results</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="parallax"></div>
       
     <!-- Quick Headings
     ================================================== -->
@@ -299,11 +210,8 @@
     <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <div class="parallax"></div>
+
     <!--The Modal-->
     <div id="skillsModal" class="modal">
         <!--Modal Content-->
@@ -402,6 +310,10 @@
     
       </section>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="parallax"></div>
 
     <!-- Skills
     ================================================== -->
@@ -477,9 +389,7 @@
     <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
-    <br/>
+    <div class="parallax"></div>
 
     <!-- Education
     ================================================== -->
@@ -857,6 +767,8 @@
     </div>
     <br/>
     <br/>
+    <br/>
+    <div class="parallax"></div>
 
     <!-- Interests
     ================================================== -->
@@ -968,6 +880,10 @@
 
       </section>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="parallax"></div>
 
     <!-- Contact
     ================================================== -->
@@ -1069,8 +985,35 @@
             }
         }
     </script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+  
   </body>
 </html>
