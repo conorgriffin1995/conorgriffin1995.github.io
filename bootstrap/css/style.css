@@ -113,6 +113,14 @@ body, html {
   padding-right: 80px;
 }
 
+#buttonsearch {
+  position: relative;
+  left: -7px;
+  height: 34px;
+  padding-bottom: 4px;
+  
+}
+
 .parallax {
   background-image:url('../../Images/computing_banner.jpg');
   /* Full height */
