@@ -92,21 +92,18 @@ body, html {
 }
 
 .navbar {
-  background-color: black;
+  background-color: rgb(34, 31, 31);
   margin: 0;
   border: 0;
-}
-
-nav{
-  border: 0;
-  margin: 0;
   padding: 0;
+  width: 100%;
+  border-radius: 0 !important;
 }
 
 #nav li a{
   color: white;
-  font-size: 11pt;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+  font-size: 10pt;
+  font-family: 'Gill Sans', 'Gill Sans MT''Trebuchet MS', sans-serif;;
 }
 #nav li a:hover{
   color: red;
