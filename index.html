@@ -129,7 +129,7 @@
           </li>
         </ul>
         <form id="searchsite" class="navbar-form navbar-right">
-          <input type="text" class="form-control" placeholder="Search...">
+          <input id="txtsearch" type="text" class="form-control" placeholder="Search...">
           <button id="buttonsearch" type="submit">
             <i class="fa fa-search"></i>
           </button>
@@ -937,6 +937,13 @@
     </div>
     <br/>
     <br/>
+	
+	<script>
+		document.getElementById('searchsite').onsubmit = function() {
+			window.location = 'http://www.google.com/search?q=site:https://conorgriffin1995.github.io/ ' + document.getElementById('txtsearch').value;
+			return false;
+		}
+	</script>
     
     <!--Javascrip to show more college results-->
     <script>
