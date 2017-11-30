@@ -77,6 +77,10 @@ body, html {
   padding-left: 0;
 }
 
+.navbar-collapse{
+  border-color: black;
+}
+
 /* 3 */
 .affix {
   top: 0;
@@ -98,6 +102,9 @@ body, html {
 .navbar-header {
 	width: 100%;
 }
+.nav {
+  margin-left: 7.5px;
+}
 #nav li a{
   color: white;
   font-size: 10pt;
@@ -108,16 +115,18 @@ body, html {
 }
 
 #searchsite{
-	width:20%;
+  float: left;
+  border-color: black;
+}
+#txtsearch{
+  float: left;
+  width: 90%;
+}
+#buttonsearch{
+float: right;
+padding-top: 10px;
 }
 
-#buttonsearch {
-  position: relative;
-  left: -7px;
-  height: 34px;
-  padding-bottom: 4px;
-  
-}
 
 .parallax {
   background-image:url('../../Images/computing_banner.jpg');
