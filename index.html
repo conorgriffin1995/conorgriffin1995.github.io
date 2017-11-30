@@ -105,36 +105,49 @@
         </div>
       </div>
       <!--menu 3-->
-      <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-        <ul class="nav navbar-nav" id="nav">
-          <li>
-            <a href="#">
-              <i class="fa fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="#About">
-              <i class="fa fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#Education">
-              <i class="fa fa-book"></i> Education</a>
-          </li>
-          <li>
-            <a href="#Skills">
-              <i class="fa fa-terminal"></i> Skills</a>
-          </li>
-          <li>
-            <a href="#WorkExperience">
-              <i class="fa fa-building"></i> Work Experience</a>
-          </li>
-        </ul>
-        <form id="searchsite" class="navbar-form navbar-right">
-          <input id="txtsearch" type="text" class="form-control" placeholder="Search...">
-          <button id="buttonsearch" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
-      </nav>
+      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbar">
+				<ul class="nav navbar-nav" id="nav">
+				  <li>
+					<a href="#">
+					  <i class="fa fa-home"></i> Home</a>
+				  </li>
+				  <li>
+					<a href="#About">
+					  <i class="fa fa-user"></i> About</a>
+				  </li>
+				  <li>
+					<a href="#Education">
+					  <i class="fa fa-book"></i> Education</a>
+				  </li>
+				  <li>
+					<a href="#Skills">
+					  <i class="fa fa-terminal"></i> Skills</a>
+				  </li>
+				  <li>
+					<a href="#WorkExperience">
+					  <i class="fa fa-building"></i> Work Experience</a>
+				  </li>
+				</ul>
+				<form id="searchsite" class="navbar-form navbar-right">
+				  <input id="txtsearch" type="text" class="form-control" placeholder="Search...">
+				  <button id="buttonsearch" type="submit">
+					<i class="fa fa-search"></i>
+				  </button>
+				</form>
+			</div>
+		  
+			</div>
+		</div>	
+		</nav>
     </div>
 
     <div class="parallax"></div>
@@ -938,12 +951,13 @@
     <br/>
     <br/>
 	
-	<script>
+  </body>
+  <script>
 		document.getElementById('searchsite').onsubmit = function() {
 			window.location = 'http://www.google.com/search?q=site:https://conorgriffin1995.github.io/ ' + document.getElementById('txtsearch').value;
 			return false;
 		}
-	</script>
+   </script>
     
     <!--Javascrip to show more college results-->
     <script>
@@ -1022,5 +1036,5 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   
-  </body>
+  
 </html>

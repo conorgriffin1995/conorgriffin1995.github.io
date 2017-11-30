@@ -95,7 +95,9 @@ body, html {
   width: 100%;
   border-radius: 0 !important;
 }
-
+.navbar-header {
+	width: 100%;
+}
 #nav li a{
   color: white;
   font-size: 10pt;
@@ -106,7 +108,7 @@ body, html {
 }
 
 #searchsite{
-  padding-right: 80px;
+	width:20%;
 }
 
 #buttonsearch {
