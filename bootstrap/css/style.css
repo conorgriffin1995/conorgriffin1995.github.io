@@ -22,19 +22,15 @@ body, html {
   left: 30px;
 }
 
-.me {
-  position: relative;
-  top: 23px;
-  left: 30px;
-  color: rgb(155, 12, 12);
-}
-
 .row-fluid > h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 22pt;
   color: rgb(155, 12, 12);
 }
-
+.dropdown {
+  position: relative;
+  left: 75px;
+}
 .dropdown-toggle{
   border-radius: 5px 50px 50px 5px;
   padding-left: 10px;
