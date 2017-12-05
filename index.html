@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
+  
 </head>
 
 <body>
@@ -109,13 +109,13 @@
       <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false" aria-controls=".nav-collapse">
+            <button type="button" class="navbar-toggle hidden-m" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false" aria-controls=".nav-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div class="nav-collapse collapse" style="height:auto;">
+            <div class="nav-collapse collapse">
               <ul class="nav navbar-nav" id="nav">
                 <li>
                   <a href="#">
@@ -129,6 +129,10 @@
                   <a href="#Education">
                     <i class="fa fa-book"></i> Education</a>
                 </li>
+                <li>
+                    <a href="#Grades">
+                      <i class="fa fa-graduation-cap"></i> Grades</a>
+                  </li>
                 <li>
                   <a href="#Skills">
                     <i class="fa fa-terminal"></i> Skills</a>
@@ -208,7 +212,7 @@
           honours degree.</p>
         <br/>
         <p>
-          <a class="btn btn-default" href="#About" role="button">View More About Me &raquo;</a>
+          <a class="btn btn-default" data-toggle="modal" data-target="#aboutMeModal">View More About Me &raquo;</a>
         </p>
       </div>
 
@@ -404,6 +408,48 @@
     </div>
   </div>
 
+  <!-- About me Modal 
+    =================================================== -->
+    <div class="modal fade" id="aboutMeModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title">About Me</h1>
+                <span class="close" data-dismiss="modal">&times;</span>
+              </div>
+              <div class="modal-body text-left">
+                  <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading">I am a young keen developer.</h2>
+                        <p class="lead">From studying software development the last 3 years I have grown my coding skills but I am still always looking
+                          to learn more. I think it is important to be eager to learn more gain more knowledge.
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <img class="featurette-image img-responsive center-block" src="Images/SDEV.jpg" alt="Generic placeholder image">
+                      </div>
+                    </div>
+              
+                    <hr class="featurette-divider">
+              
+                    <div class="row featurette">
+                      <div class="col-md-7 col-md-push-5">
+                        <h2 class="featurette-heading">Interested in Cloud Platform Solutions.</h2>
+                        <p class="lead">Have studied cloud services in college. At the moment I am using Azure cloud services for my 4th year project.</p>
+                      </div>
+                      <div class="col-md-5 col-md-pull-7">
+                        <img class="featurette-image img-responsive center-block" src="Images/Cloud.jpg" alt="Generic placeholder image">
+                      </div>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <!-- Year 2 Modal 
     =================================================== -->
   <div class="modal fade" id="year2Modal" role="dialog">
@@ -461,45 +507,6 @@
       </div>
     </div>
   </div>
-
-  <!-- About
-    ================================================== -->
-  <div class="container About">
-    <section class="About-section" id="About">
-      <div class="page-header">
-        <h1>About Me</h1>
-      </div>
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">I am a young keen developer.</h2>
-          <p class="lead">From studying software development the last 3 years I have grown my coding skills but I am still always looking
-            to learn more. I think it is important to be eager to learn more gain more knowledge.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="Images/SDEV.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Interested in Cloud Platform Solutions.</h2>
-          <p class="lead">Have studied cloud services in college. At the moment I am using Azure cloud services for my 4th year project.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="Images/Cloud.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-    </section>
-  </div>
-  <br/>
-  <br/>
-  <br/>
 
   <!-- Parallax
     =================================================== -->
@@ -580,369 +587,406 @@
   <!-- Education
     ================================================== -->
   <div class="container Education">
-    <section class="Education-section" id="Education">
+    <section class="Grades-section" id="Education">
+
+    </section>
+  </div>
+
+  <!-- Grades
+    ================================================== -->
+  <div class="container Grades">
+    <section class="Grades-section" id="Grades">
       <div class="page-header">
-        <h1>College Results</h1>
+        <h1>College Grades</h1>
       </div>
 
-      <div class="row">
-        <h2>Year 4</h2>
-        <h3>GPA = 3.07</h3>
-        <div class="col-md-6">
-          <h5>Semester 1</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Enterprise Application Development</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Enterprise Performance Architecture</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Interactive Media Design</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Information Management</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Social Media Analysis</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Project</td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
+      <!--Tabs-->
+      <ul class="nav nav-tabs">
+        <li class="bg-primary"><a data-toggle="tab" href="#Year4">Year 4</a></li>
+        <li class="bg-info"><a data-toggle="tab" href="#Year3">Year 3</a></li>
+        <li class="bg-success"><a data-toggle="tab" href="#Year2">Year 2</a></li>
+        <li class="bg-warning"><a data-toggle="tab" href="#Year1">Year 1</a></li>
+      </ul>
+      
+      <div class="tab-content">
+
+        <div id="Year4" class="tab-pane fade in active">
+          <div class="row">
+            <br />
+            <br />
+            <h3>GPA = 3.07</h3>
+            <div class="col-md-6">
+              <h5>Semester 1</h5>
+              <table class="table">
+                <thead>
+                  <tr class="bg-primary">
+                    <th>#</th>
+                    <th>Module Name</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Enterprise Application Development</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Enterprise Performance Architecture</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Interactive Media Design</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Information Management</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Social Media Analysis</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Project</td>
+                    <td>B</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Semester 2</h5>
+                <table class="table">
+                  <thead>
+                    <tr class="bg-primary">
+                      <th>#</th>
+                      <th>Module Name</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <h5>Semester 2</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>NA</td>
-                <td>NA</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <div id="Year3" class="tab-pane fade">
+          <div class="row">
+          <br />
+          <br />
+          <h3>GPA = 3.07</h3>
+            <div class="col-md-6">
+              <h5>Semester 1</h5>
+              <table class="table">
+                <thead>
+                  <tr class="bg-info">
+                    <th>#</th>
+                    <th>Module Name</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Algorithms & Data Structures</td>
+                    <td>B-</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Cloud Services and Distributed Computing</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Web Application Development</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Operating Systems</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Innovation & Entrepreneurship</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Advanced Databases</td>
+                    <td>B+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Semester 2</h5>
+                <table class="table">
+                  <thead>
+                    <tr class="bg-info">
+                      <th>#</th>
+                      <th>Module Name</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Project</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Work Experience</td>
+                      <td>B+</td>
+                    </tr>
+      
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
         </div>
 
-        <h2>Year 3</h2>
-        <h3>GPA = 3.07</h3>
-        <div class="col-md-6">
-          <h5>Semester 1</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Algorithms & Data Structures</td>
-                <td>B-</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Cloud</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td></td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td></td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td></td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td></td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
+        <div id="Year2" class="tab-pane fade">
+          <div class="row">
+            <br />
+            <br />
+            <h3>GPA = 3.33</h3>
+            <div class="col-md-6">
+              <h5>Semester 1</h5>
+              <table class="table">
+                <thead>
+                  <tr class="bg-success">
+                    <th>#</th>
+                    <th>Module Name</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Web Design and Development</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Software Development 3 (Java)</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Discrete Maths 2</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Database Design and Programming</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Networking 1</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Software Quality Assurance & Testing</td>
+                    <td>B</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Semester 2</h5>
+                <table class="table">
+                  <thead>
+                    <tr class="bg-success">
+                      <th>#</th>
+                      <th>Module Name</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Information Security</td>
+                      <td>C+</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Software Development 4 (Java)</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Object Oriented Analysis & Design</td>
+                      <td>C+</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Management Science</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Networking 2</td>
+                      <td>B+</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Project</td>
+                      <td>B</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+          </div>
+        </div>
+        
+        <div id="Year1" class="tab-pane fade">
+          <div class="row">
+            <br />
+            <br />
+            <h3>GPA = 3.21</h3>
+            <div class="col-md-6">
+              <h5>Semester 1</h5>
+              <table class="table">
+                <thead>
+                  <tr class="bg-warning">
+                    <th>#</th>
+                    <th>Module Name</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Learning to Learn</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Discrete Maths 1</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Business & Information Systems</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Fundamentals of Interface & Web Design</td>
+                    <td>B+</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Computer Architecture</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Software Development 1 (Java)</td>
+                    <td>B+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Semester 2</h5>
+                <table class="table">
+                  <thead>
+                    <tr class="bg-warning">
+                      <th>#</th>
+                      <th>Module Name</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Software Development 2 (Java)</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Operating System Fundamentals</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Database Fundamentals</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Statistics</td>
+                      <td>B+</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Social Media Communications</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Object Oriented System Analysis</td>
+                      <td>B</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <h5>Semester 2</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Project</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Work Experience</td>
-                <td>B+</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <a class="btn btn-default" role="button" onclick="ShowMore()">Show More/Less Results &raquo;</a>
-        </div>
-      </div>
-
-      <div class="row" id="moreResults">
-        <h2>Year 2</h2>
-        <h3>GPA = 3.33</h3>
-        <div class="col-md-6">
-          <h5>Semester 1</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Web Design and Development</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Software Development 3 (Java)</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Discrete Maths 2</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Database Design and Programming</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Networking 1</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Software Quality Assurance & Testing</td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-6">
-          <h5>Semester 2</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Information Security</td>
-                <td>C+</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Software Development 4 (Java)</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Object Oriented Analysis & Design</td>
-                <td>C+</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Management Science</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Networking 2</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Project</td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h2>Year 1</h2>
-        <h3>GPA = 3.21</h3>
-        <div class="col-md-6">
-          <h5>Semester 1</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Learning to Learn</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Discrete Maths 1</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Business & Information Systems</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Fundamentals of Interface & Web Design</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Computer Architecture</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Software Development 1 (Java)</td>
-                <td>B+</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-6">
-          <h5>Semester 2</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Module Name</th>
-                <th>Grade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Software Development 2 (Java)</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Operating System Fundamentals</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Database Fundamentals</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Statistics</td>
-                <td>B+</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Social Media Communications</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Object Oriented System Analysis</td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      
 
     </section>
   </div>
@@ -1208,47 +1252,86 @@
   <br/>
   <br/>
 
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script>
+    document.getElementById('searchsite').onsubmit = function () {
+      window.location = 'http://www.google.com/search?q=site:https://conorgriffin1995.github.io/ ' + document.getElementById('txtsearch').value;
+      return false;
+    }
+  </script>
+  <!--Javascrip to show more college results-->
+  <script>
+    function ShowMore() {
+      var x = document.getElementById("moreResults");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <!--Javascript to return user email-->
+  <script>
+      function Results() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+  
+        document.write("<h2>Thanks!!</h2>");
+        document.write("<p>Now, your data will send via email.</p>");
+        document.write("<h3>Here is your data:</h3>");
+        document.write(name + "<br/>");
+        document.write(email + "<br/>");
+      }
+  </script>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Javascript for smooth scrolling-->
+  <script>
+    // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .not('[href="#Year4"]')
+  .not('[href="#Year3"]')
+  .not('[href="#Year2"]')
+  .not('[href="#Year1"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          };
+        });
+      }
+    }
+  });    
+  </script>
 </body>
-<script>
-  $(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script>
-<script>
-  document.getElementById('searchsite').onsubmit = function () {
-    window.location = 'http://www.google.com/search?q=site:https://conorgriffin1995.github.io/ ' + document.getElementById('txtsearch').value;
-    return false;
-  }
-</script>
-<!--Javascrip to show more college results-->
-<script>
-  function ShowMore() {
-    var x = document.getElementById("moreResults");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-</script>
-<!--Javascript to return user email-->
-<script>
-    function Results() {
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-
-      document.write("<h2>Thanks!!</h2>");
-      document.write("<p>Now, your data will send via email.</p>");
-      document.write("<h3>Here is your data:</h3>");
-      document.write(name + "<br/>");
-      document.write(email + "<br/>");
-    }
-</script>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
-
 </html>

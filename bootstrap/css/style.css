@@ -11,8 +11,8 @@ body, html {
 
 .btn {
   color: #F8F8F8;
-  background-color: rgb(213, 113, 113);
-  border-color: rgb(213, 113, 113);
+  background-color: rgb(49, 70, 223);
+  border-color: rgb(49, 70, 223);
 }
 
 /* CUSTOMIZE THE NAVBAR 1
@@ -34,11 +34,21 @@ body, html {
   font-size: 22pt;
   color: rgb(155, 12, 12);
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
   .navbar-toggle {
-      display: block;;
+      display: block;
   }
 }
+@media (min-width: 768px){
+  .navbar-collapse {
+      display: block;
+  }
+
+  .collapse {
+      display: block;
+  }
+}
+
 .dropdown-toggle{
   border-radius: 5px 50px 50px 5px;
   padding-left: 10px;
@@ -182,8 +192,7 @@ padding-top: 10px;
 }
 .carousel-inner > .item > .container > .carousel-caption > a {
   color: #F8F8F8;
-  background-color: rgb(213, 113, 113);
-  border-color: rgb(213, 113, 113);
+
 }
 
 /* QuickHeadings CONTENT
@@ -207,8 +216,7 @@ padding-top: 10px;
 
 .QuickHeadings .col-lg-4 p a {
   color: #F8F8F8;
-  background-color: rgb(213, 113, 113);
-  border-color: rgb(213, 113, 113);
+
 }
 
 /* Skills CONTENT
