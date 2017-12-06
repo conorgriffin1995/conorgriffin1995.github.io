@@ -206,7 +206,7 @@
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <img class="img-circle" src="Images/conor2.jpg" alt="conor placeholder image" width="140" height="140">
+        <img class="img-circle" src="Images/conorleanne.jpg" alt="conor placeholder image" width="140" height="140">
         <h2>About</h2>
         <p>I am a student at IT Tallaght studying computer science. Currently in 4th year hoping to graduate with a level 2:1
           honours degree.</p>
@@ -483,19 +483,19 @@
             <br />
             <div class="row">
               <div class="col-md-12">
-                <img src="images/musicFX/musicFXHomeLoggedIn.png" alt="First image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxhomeloggedin.png" alt="First image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXImgTransition.png" alt="Second image" height="100%" width="100%">
+                <img src="images/musicfx/musicfximgtransition.png" alt="Second image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXHomeBottom.png" alt="Third image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxhomebottom.png" alt="Third image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXProducts.png" alt="Fourth image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxproducts.png" alt="Fourth image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXSearch.png" alt="Fifth image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxsearch.png" alt="Fifth image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXCart.png" alt="Sixth image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxcart.png" alt="Sixth image" height="100%" width="100%">
                 <hr>
-                <img src="images/musicFX/musicFXPreviousOrders.png" alt="Seventh image" height="100%" width="100%">
+                <img src="images/musicfx/musicfxpreviousorders.png" alt="Seventh image" height="100%" width="100%">
                 <hr>
               </div>
             </div>
@@ -1252,17 +1252,21 @@
   <br/>
   <br/>
 
+  <!--Javascript for tooltip-->
   <script>
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+
+  <!-- Javascript to use search bar -->
   <script>
     document.getElementById('searchsite').onsubmit = function () {
       window.location = 'http://www.google.com/search?q=site:https://conorgriffin1995.github.io/ ' + document.getElementById('txtsearch').value;
       return false;
     }
   </script>
+
   <!--Javascrip to show more college results-->
   <script>
     function ShowMore() {
@@ -1274,6 +1278,7 @@
       }
     }
   </script>
+
   <!--Javascript to return user email-->
   <script>
       function Results() {
@@ -1295,43 +1300,44 @@
   
   <!-- Javascript for smooth scrolling-->
   <script>
-    // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .not('[href="#Year4"]')
-  .not('[href="#Year3"]')
-  .not('[href="#Year2"]')
-  .not('[href="#Year1"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          };
-        });
-      }
-    }
-  });    
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .not('[href="#Year4"]')
+        .not('[href="#Year3"]')
+        .not('[href="#Year2"]')
+        .not('[href="#Year1"]')
+        .click(function (event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function () {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                };
+              });
+            }
+          }
+        });    
   </script>
+
 </body>
 </html>
