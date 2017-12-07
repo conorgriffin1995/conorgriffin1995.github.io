@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
   color: black;
@@ -13,6 +13,12 @@ body, html {
   color: #F8F8F8;
   background-color: rgb(49, 70, 223);
   border-color: rgb(49, 70, 223);
+}
+
+p{
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 /* CUSTOMIZE THE NAVBAR 1
@@ -140,6 +146,8 @@ body, html {
 #searchsite{
   float: left;
   border-color: black;
+  margin-right: auto;
+  width: 25%;
 }
 #txtsearch{
   float: left;
