@@ -77,6 +77,12 @@
                     Send Email
                   </a>
                 </li>
+                <li>
+                  <a href="CV/ConorGriffinCV.doc" download="ConorGriffinCV.doc">
+                    <i class="fa fa-file-text-o"></i>
+                    Download CV
+                  </a>
+                </li>                
                 <li class="dropdown-header">Links</li>
                 <li>
                   <a title="Github" href="https://github.com/conorgriffin1995">
@@ -160,43 +166,6 @@
 
   <!--Parallax-->
   <div class="parallax"></div>
-
-  <!-- Carousel
-    ================================================== -->
-  <div id="InfoCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#InfoCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#InfoCarousel" data-slide-to="1"></li>
-      <li data-target="#InfoCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img class="first-slide" src="Images/logoCV.jpg" alt="First slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <a class="btn btn-lg btn-primary" href="CV/ConorGriffinCV.doc" download="ConorGriffinCV.doc">Download CV</a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="second-slide" src="Images/DSP.png" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="third-slide" src="Images/ITTallaght.jpg" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <a class="btn btn-lg btn-primary" href="#Education" role="button">College results</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Quick Headings
     ================================================== -->
@@ -410,180 +379,50 @@
 
   <!-- About me Modal 
     =================================================== -->
-    <div class="modal fade" id="aboutMeModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title">About Me</h1>
-                <span class="close" data-dismiss="modal">&times;</span>
-              </div>
-              <div class="modal-body text-left">
+  <div class="modal fade" id="aboutMeModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">About Me</h1>
+              <span class="close" data-dismiss="modal">&times;</span>
+            </div>
+            <div class="modal-body text-left">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                      <h2 class="featurette-heading">I am a young keen developer.</h2>
+                      <p class="lead">From studying software development the last 3 years I have grown my coding skills but I am still always looking
+                        to learn more. I think it is important to be eager to learn more gain more knowledge.
+                      </p>
+                    </div>
+                    <div class="col-md-5">
+                      <img class="featurette-image img-responsive center-block" src="Images/SDEV.jpg" alt="Generic placeholder image">
+                    </div>
+                  </div>
+            
+                  <hr class="featurette-divider">
+            
                   <div class="row featurette">
-                      <div class="col-md-7">
-                        <h2 class="featurette-heading">I am a young keen developer.</h2>
-                        <p class="lead">From studying software development the last 3 years I have grown my coding skills but I am still always looking
-                          to learn more. I think it is important to be eager to learn more gain more knowledge.
-                        </p>
-                      </div>
-                      <div class="col-md-5">
-                        <img class="featurette-image img-responsive center-block" src="Images/SDEV.jpg" alt="Generic placeholder image">
-                      </div>
+                    <div class="col-md-7 col-md-push-5">
+                      <h2 class="featurette-heading">Interested in Cloud Platform Solutions.</h2>
+                      <p class="lead">Have studied cloud services in college. At the moment I am using Azure cloud services for my 4th year project.</p>
                     </div>
-              
-                    <hr class="featurette-divider">
-              
-                    <div class="row featurette">
-                      <div class="col-md-7 col-md-push-5">
-                        <h2 class="featurette-heading">Interested in Cloud Platform Solutions.</h2>
-                        <p class="lead">Have studied cloud services in college. At the moment I am using Azure cloud services for my 4th year project.</p>
-                      </div>
-                      <div class="col-md-5 col-md-pull-7">
-                        <img class="featurette-image img-responsive center-block" src="Images/Cloud.jpg" alt="Generic placeholder image">
-                      </div>
+                    <div class="col-md-5 col-md-pull-7">
+                      <img class="featurette-image img-responsive center-block" src="Images/Cloud.jpg" alt="Generic placeholder image">
                     </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+                  </div>
             </div>
-        </div>
-    </div>
-
-  <!-- Year 2 Modal 
-    =================================================== -->
-  <div class="modal fade" id="year2Modal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">2nd Year Project - Music FX</h4>
-          <span class="close" data-dismiss="modal">&times;</span>
-        </div>
-        <div class="modal-body text-left">
-          <p>
-            In 2nd year we were tasked to make a MVC web app using java play framework and scala in teams of 3. For this project we had
-            to come up with an idea using basic CRUD functionality, the site would also have a database, we used a built
-            in H2 local database file which stored customer and admin information, product objects and order information.
-          </p>
-          <hr>
-          <p>
-            It was my job to work on back end functionality. Users were able to login and add different items to a shopping cart. A user
-            was able to have many different products from different or the same category. A user was able to then checkout
-            and proceed to make a payment.
-          </p>
-          <p>
-            The functionality to the site was around 80% there. We got most of the security complete but were missing some functionality
-            here. This was due to lack of team effort but I was very happy with the work I done and learned a lot about scala
-            and play framework in the process.
-          </p>
-          <hr>
-          <button data-toggle="collapse" class="centered btn btn-primary" data-target="#content">Show Images</button>
-          <div id="content" class="collapse">
-            <br />
-            <div class="row">
-              <div class="col-md-12">
-                <img src="images/musicfx/musicfxhomeloggedin.png" alt="First image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfximgtransition.png" alt="Second image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfxhomebottom.png" alt="Third image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfxproducts.png" alt="Fourth image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfxsearch.png" alt="Fifth image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfxcart.png" alt="Sixth image" height="100%" width="100%">
-                <hr>
-                <img src="images/musicfx/musicfxpreviousorders.png" alt="Seventh image" height="100%" width="100%">
-                <hr>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
-            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
       </div>
-    </div>
   </div>
 
   <!-- Parallax
     =================================================== -->
   <div class="parallax"></div>
-
-  <!-- Skills
-    ================================================== -->
-  <div class="container Skills">
-    <section class="Skills-section" id="Skills">
-      <div class="page-header">
-        <h1>IT Skills</h1>
-      </div>
-       
-      <div class="row">
-        <div class="col-md-6">
-          <a data-toggle="tooltip" title="I am able to collaborate easily with others!" style="color:aqua;"><h3>Collaborative</h3></a>
-          <br />
-          <a data-toggle="tooltip" title="I am always on time." style="color:blueviolet;"><h3>Punctual</h3></a>       
-          <br />
-          <a data-toggle="tooltip" title="I am a friendly person who can always help and be nice to others." style="color:red;"><h3>Friendly</h3></a>
-          <br />        
-          <a data-toggle="tooltip" title="I am able to adapt quickly and make smart snappy decisions." style="color:orangered;"><h3>Quick Thinking</h3></a>
-        </div>
-        <div class="col-md-6">
-            <img src="Images/nice3.jpg" height="100%" width="100%">  
-        </div>
-      </div>
-      <hr>
-      <br/>
-      <br/>
-      <div class="row">
-        <div class="col-md-6">
-            <img src="Images/nice2.jpg" height="100%" width="100%">  
-        </div>
-        <div class="col-md-6">
-          <a data-toggle="tooltip" title="I like to work in groups and I'm able to use my social skills to talk to others." style="color:aqua;"><h3>Sociable</h3></a>
-          <br />
-          <a data-toggle="tooltip" title="I am able adapt to a situation quickly." style="color:blueviolet;"><h3>Adaptive</h3></a>       
-          <br />
-          <a data-toggle="tooltip" title="My communication skills are some of my best skills." style="color:red;"><h3>Communicate</h3></a>
-          <br />        
-          <a data-toggle="tooltip" title="I am a hard working person and willing to work long hours to get a job done." style="color:orangered;"><h3>Hard Working</h3></a>
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
-      <div class="row">
-        <div class="col-md-6">
-            <a data-toggle="tooltip" title="I am a likeable person." style="color:aqua;"><h3>Likeable</h3></a>
-            <br />
-            <a data-toggle="tooltip" title="I find from studying Computer science 4 years I am able to learn very quickly." style="color:blueviolet;"><h3>Easy Learner</h3></a>       
-            <br />
-            <a data-toggle="tooltip" title="I am a fun person, I love to play sports and am very competitive." style="color:red;"><h3>Fun</h3></a>
-            <br />        
-            <a data-toggle="tooltip" title="I am able to meet deadlines and have never been late for a project upload." style="color:orangered;"><h3>Meet Deadlines</h3></a>
-        </div>
-        <div class="col-md-6">  
-          <img src="Images/nice.jpg" height="100%" width="100%">          
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
-      <div class="row">
-        <p>
-          <a class="btn btn-default" data-toggle="modal" data-target="#skillsModal">Software Skills &raquo;</a>
-        </p>
-      </div>
-
-    </section>
-  </div>
-  <br/>
-  <br/>
-  <br/>
-  <div class="parallax"></div>
-
+  
   <!-- Education
     ================================================== -->
   <div class="container Education">
@@ -591,7 +430,7 @@
 
     </section>
   </div>
-
+  
   <!-- Grades
     ================================================== -->
   <div class="container Grades">
@@ -602,10 +441,10 @@
 
       <!--Tabs-->
       <ul class="nav nav-tabs">
-        <li class="bg-primary"><a data-toggle="tab" href="#Year4">Year 4</a></li>
-        <li class="bg-info"><a data-toggle="tab" href="#Year3">Year 3</a></li>
-        <li class="bg-success"><a data-toggle="tab" href="#Year2">Year 2</a></li>
-        <li class="bg-warning"><a data-toggle="tab" href="#Year1">Year 1</a></li>
+        <li><a data-toggle="tab" href="#Year4">Year 4</a></li>
+        <li><a data-toggle="tab" href="#Year3">Year 3</a></li>
+        <li><a data-toggle="tab" href="#Year2">Year 2</a></li>
+        <li><a data-toggle="tab" href="#Year1">Year 1</a></li>
       </ul>
       
       <div class="tab-content">
@@ -708,7 +547,6 @@
           </div>
         </div>
 
-
         <div id="Year3" class="tab-pane fade">
           <div class="row">
           <br />
@@ -718,7 +556,7 @@
               <h5>Semester 1</h5>
               <table class="table">
                 <thead>
-                  <tr class="bg-info">
+                  <tr class="bg-primary">
                     <th>#</th>
                     <th>Module Name</th>
                     <th>Grade</th>
@@ -797,7 +635,7 @@
               <h5>Semester 1</h5>
               <table class="table">
                 <thead>
-                  <tr class="bg-success">
+                  <tr class="bg-primary">
                     <th>#</th>
                     <th>Module Name</th>
                     <th>Grade</th>
@@ -895,7 +733,7 @@
               <h5>Semester 1</h5>
               <table class="table">
                 <thead>
-                  <tr class="bg-warning">
+                  <tr class="bg-primary">
                     <th>#</th>
                     <th>Module Name</th>
                     <th>Grade</th>
@@ -993,95 +831,352 @@
   <br/>
   <br/>
   <br/>
+  
+    <!-- Parallax
+  =================================================== -->
+  <div class="parallax"></div>
+
+  <!-- Skills
+    ================================================== -->
+  <div class="container Skills">
+    <section class="Skills-section" id="Skills">
+      <div class="page-header">
+        <h1>IT Skills</h1>
+      </div>
+       
+      <div class="row">
+        <div class="col-md-6">
+          <a data-toggle="tooltip" title="I am able to collaborate easily with others!" style="color:aqua;"><h3>Collaborative</h3></a>
+          <br />
+          <a data-toggle="tooltip" title="I am always on time." style="color:blueviolet;"><h3>Punctual</h3></a>       
+          <br />
+          <a data-toggle="tooltip" title="I am a friendly person who can always help and be nice to others." style="color:red;"><h3>Friendly</h3></a>
+          <br />        
+          <a data-toggle="tooltip" title="I am able to adapt quickly and make smart snappy decisions." style="color:orangered;"><h3>Quick Thinking</h3></a>
+        </div>
+        <div class="col-md-6">
+            <img src="Images/nice3.jpg" height="100%" width="100%">  
+        </div>
+      </div>
+      <hr>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-6">
+            <img src="Images/nice2.jpg" height="100%" width="100%">  
+        </div>
+        <div class="col-md-6">
+          <a data-toggle="tooltip" title="I like to work in groups and I'm able to use my social skills to talk to others." style="color:aqua;"><h3>Sociable</h3></a>
+          <br />
+          <a data-toggle="tooltip" title="I am able adapt to a situation quickly." style="color:blueviolet;"><h3>Adaptive</h3></a>       
+          <br />
+          <a data-toggle="tooltip" title="My communication skills are some of my best skills." style="color:red;"><h3>Communicate</h3></a>
+          <br />        
+          <a data-toggle="tooltip" title="I am a hard working person and willing to work long hours to get a job done." style="color:orangered;"><h3>Hard Working</h3></a>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-6">
+            <a data-toggle="tooltip" title="I am a likeable person." style="color:aqua;"><h3>Likeable</h3></a>
+            <br />
+            <a data-toggle="tooltip" title="I find from studying Computer science 4 years I am able to learn very quickly." style="color:blueviolet;"><h3>Easy Learner</h3></a>       
+            <br />
+            <a data-toggle="tooltip" title="I am a fun person, I love to play sports and am very competitive." style="color:red;"><h3>Fun</h3></a>
+            <br />        
+            <a data-toggle="tooltip" title="I am able to meet deadlines and have never been late for a project upload." style="color:orangered;"><h3>Meet Deadlines</h3></a>
+        </div>
+        <div class="col-md-6">  
+          <img src="Images/nice.jpg" height="100%" width="100%">          
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <p>
+          <a class="btn btn-default" data-toggle="modal" data-target="#skillsModal">Software Skills &raquo;</a>
+        </p>
+      </div>
+
+    </section>
+  </div>
+  <br/>
+  <br/>
+  <br/>
 
   <!-- Parallax
     =================================================== -->
   <div class="parallax"></div>
   <br/>
   <br/>
-
-  <!-- Projects
+  
+  <!-- Carousel for projects
     ================================================== -->
   <div class="container Projects">
     <section class="Projects-section" id="Projects">
       <div class="jumbotron">
         <div class="page-header">
-          <h1>Projects</h1>
-          
+          <h1>Projects</h1>          
         </div>
+
         <hr />
-        <div class="row">
-          <div class="col-md-6" id="project">
-            <img src="Images/musicFX/musicFXHomeLoggedIn.png" class="image" height="400" width="500">
-            <div class="overlay" data-toggle="modal" data-target="#year2Modal">
-              <div class="text">2nd Year Project</div>
+        <br />        
+
+         <!--Tabs-->
+        <ul class="nav nav-tabs">
+          <li>
+            <a data-toggle="tab" href="#cloud">Cloud App</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#ci">CI Platform 2.0</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#crud">CRUD Web App</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#sand">Sandcastle</a>
+          </li>
+        </ul>
+
+        <br />   
+
+        <div class="tab-content">
+            <div id="cloud" class="tab-pane fade in active">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="fourthYearCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#fourthYearCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#fourthYearCarousel" data-slide-to="1"></li>
+                          <li data-target="#fourthYearCarousel" data-slide-to="2"></li>
+                          <li data-target="#fourthYearCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="first-slide" src="Images/amsvideoprocessingworkflow.png" alt="First slide">
+                          </div>
+                  
+                          <div class="item">
+                            <img class="second-slide" src="Images/microsoftazure.jpg" alt="Second slide">         
+                          </div>
+                        
+                          <div class="item">
+                            <img class="third-slide" src="Images/webapp.png" alt="Third slide">
+                          </div>
+    
+                          <div class="item">
+                              <img class="fourth-slide" src="Images/videostreaming.jpg" alt="fourth slide">
+                            </div>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                  <h2>4th Year Project - Cloud Web App</h2>
+                  <p>
+                    Project will be completed by May 2018. Written in C# and using Azure, I will create
+                    a video sharing application which uses Azure Media Services to stream media to devices. 
+                    It will be a web app (ASP.Net MVC) and an Azure cloud service backend (Web API) which uses a media services account.              
+                  </p>
+                  <p>
+                    The application will be for people who enjoy watching videos and sharing their favourite videos with other people. 
+                    Each user will use the app to share videos with each other. I am hoping to create many different functions within the 
+                    application; I will also create a piece of functionality that allowed users to comment on videos. 
+                  </p>
+                  <p>
+                      How media is streamed has always interested me, I spend at least an hour every day on YouTube, Facebook or 
+                      Instagram looking at videos and I was always interested in building my own application that allows users to 
+                      share their own videos. The main users of the application will be people of all ages but I feel my application 
+                      will be for people who use social media a lot so I will probably be targeting the 18 – 39 age groups. 
+                  </p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <h2>2nd Year Project</h2>
-            <p>
-              <i>Project was completed in scala and the java play framework.</i>
-            </p>
-          </div>
-        </div>
-
-        <br/>
-        <hr/>
-
-        <div class="row">
-          <div class="col-md-6" id="project">
-            <img src="Images/DSP.png" class="image" id="thirdYearBtn" height="400" width="500">
-            <div class="overlay">
-              <div class="text">3rd Year Project</div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <h2>3rd Year Project</h2>
-            <p>
-              <i>Project was completed at the Department of Social Protection.</i>
-            </p>
-          </div>
-        </div>
-
-        <br/>
-        <hr/>
-
-        <div class="row">
-          <div class="col-md-6" id="project">
-            <img src="Images/musicFX/musicFXHomeLoggedIn.png" class="image" id="secondYearBtn" height="400" width="500">
-            <div class="overlay">
-              <div class="text">4th Year Project</div>
+            
+            <div id="ci" class="tab-pane fade">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="thirdYearCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#thirdYearCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#thirdYearCarousel" data-slide-to="1"></li>
+                          <li data-target="#thirdYearCarousel" data-slide-to="2"></li>
+                          <li data-target="#thirdYearCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="first-slide" src="Images/dsp.png" alt="First slide">
+                          </div>
+    
+                          <div class="item">
+                              <img class="second-slide" src="Images/bomi.png" alt="Second slide">         
+                            </div>
+                  
+                          <div class="item">
+                            <img class="third-slide" src="Images/branches.png" alt="third slide">         
+                          </div>
+                        
+                          <div class="item">
+                            <img class="fourth-slide" src="Images/integmirror.png" alt="fourth slide">
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+              <div class="col-md-6">
+                  <h2>3rd Year Project - CI Platform 2.0</h2>
+                  <p>
+                    Project was completed at the Department of Social Protection during my work experience period. During my internship at the
+                    Department of Social Protection (DSP) I worked on a team called REM CI 2.0, the team are working on the development of
+                    a new Continuous Integration (CI) platform.
+                  </p>
+                  <p>
+                    The new CI platform 2.0 aims to support multiple apps, each of which is made up of multiple components, modules, clusters,
+                    generally known as “artifacts”, all of which are in their own git repository, this when finished will leave a much finer
+                    grained view of handling the company’s codebases. The new architecture when completed will essentially allow any automated
+                    tests to run a lot faster, at the moment it takes too long (12-24 hours). It is not feasible to force developers to wait
+                    and check that a previous check-in/commit does not “break the build”.
+                  </p>
+                  <p>
+                    The new platform will have separate apps in their own git repositories, thus: if code has not changed, then is no real reason
+                    to re-test that code. If an app hasn’t been redeployed in a given month then no manual regression testing is required.
+                    I was working with the team on the development of this platform for a few months. I used this project as my 3rd year project
+                    with IT Tallaght.
+                  </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <h2>4th Year Project</h2>
-            <p>
-              <i>Project will be completed by May 2018.</i>
-            </p>
-          </div>
-        </div>
+          </div>     
 
-        <br/>
-        <hr/>
-
-        <div class="row">
-          <div class="col-md-6" id="project">
-            <img src="Images/DSP.png" class="image" id="thirdYearBtn" height="400" width="500">
-            <div class="overlay">
-              <div class="text">Sandcastle Project</div>
-            </div>
+          <div id="crud" class="tab-pane fade">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="secondYearCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#secondYearCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="1"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="2"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="3"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="4"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="5"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="6"></li>
+                          <li data-target="#secondYearCarousel" data-slide-to="7"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="first-slide" src="images/musicfx/musicfxhomeloggedin.png" alt="First slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="second-slide" src="images/musicfx/musicfximgtransition.png" alt="Second slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="third-slide" src="images/musicfx/musicfxhomebottom.png" alt="Third slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="fourth-slide" src="images/musicfx/musicfxproducts.png" alt="fourth slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="fifth-slide" src="images/musicfx/musicfxsearch.png" alt="fifth slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="sixth-slide" src="images/musicfx/musicfxcart.png" alt="sixth slide">
+                          </div>
+                        
+                          <div class="item">
+                            <img class="seventh-slide" src="images/musicfx/musicfxpreviousorders.png" alt="seventh slide">
+                          </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <h2>2nd Year Project - CRUD Web App</h2>
+                  <p>
+                    Project was completed in scala and the java play framework.
+                    In 2nd year we were tasked to make a MVC web app using java play framework and scala in teams of 3. For this project we had
+                    to come up with an idea using basic CRUD functionality, the site would also have a database, we used a built in H2 local
+                    database file which stored customer and admin information, product objects and order information.
+                  </p>
+                  <p>
+                    It was my job to work on back end functionality. Users were able to login and add different items to a shopping cart. A user
+                    was able to have many different products from different or the same category. A user was able to then checkout and proceed
+                    to make a payment.
+                  </p>
+                  <p>
+                    The functionality to the site was around 80% there. We got most of the security complete but were missing some functionality
+                    here. This was due to lack of team effort but I was very happy with the work I done and learned a lot about scala and
+                    play framework in the process.
+                  </p>
+                </div>
+              </div>
           </div>
-          <div class="col-md-6">
-            <h2>Sandcastle scripting Project</h2>
-            <p>
-              <i>Project was completed at the DSP using PowerShell and Microsoft Visual Studio Code.</i>
-            </p>
+ 
+              <div id="sand" class="tab-pane fade">
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="sandcastleCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#sandcastleCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#sandcastleCarousel" data-slide-to="1"></li>
+                      <li data-target="#sandcastleCarousel" data-slide-to="2"></li>
+                      <li data-target="#sandcastleCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img class="first-slide" src="Images/sand1.png" alt="First slide">
+                      </div>
+                      
+                      <div class="item">
+                        <img class="second-slide" src="Images/sand2.png" alt="Second slide">
+                      </div>
+                      
+                      <div class="item">
+                        <img class="third-slide" src="Images/sand3.png" alt="Third slide">
+                      </div>
+                      
+                      <div class="item">
+                        <img class="fourth-slide" src="Images/sandps.png" alt="fourth slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h2>Sandcastle Scripting Project</h2>
+                  <p>
+                    Project was completed at the DSP using PowerShell and Microsoft Visual Studio Code. Sandcastle is an IDE used to create project
+                    files that build help documentation in various formats with Microsoft’s Sandcastle tools. It produces accurate, MSDN style,
+                    comprehensive documentation by reflecting over the source assemblies and optionally integrating XML Documentation Comments.
+                    It converts XML-based documentation into help topics that are fit for viewing in a help system.
+                  </p>
+                  <p>
+                    The project idea was to use the Microsoft extension tool Sandcastle to build/create documentation on old projects stored
+                    in the system codebases. Using visual studio code I automated the process by writing simple but effective PowerShell scripts.
+                    The script when compiled ran against a C# or VB project and added a template sandcastle project to the project and ran
+                    against its solution extracting all information in the project.
+                  </p>
+                  <p>
+                    This script was then added to a Jenkins job to run as part of a pipeline.
+                  </p>          
+                </div>
+              </div>
+              </div>
+              
           </div>
-        </div>
-
-        <br/>
-        <hr/>
-      </div>
+                          
+        </div>   
+       
+        
     </section>
   </div>
 
@@ -1267,7 +1362,7 @@
     }
   </script>
 
-  <!--Javascrip to show more college results-->
+  <!--Javascrip to show more projects results-->
   <script>
     function ShowMore() {
       var x = document.getElementById("moreResults");
@@ -1278,6 +1373,7 @@
       }
     }
   </script>
+
 
   <!--Javascript to return user email-->
   <script>
@@ -1309,6 +1405,10 @@
         .not('[href="#Year3"]')
         .not('[href="#Year2"]')
         .not('[href="#Year1"]')
+        .not('[href="#cloud"]')
+        .not('[href="#ci"]')
+        .not('[href="#crud"]')
+        .not('[href="#sand"]')
         .click(function (event) {
           // On-page links
           if (
