@@ -687,7 +687,7 @@
           <div class="row">
             <br />
             <br />
-            <h3>GPA = 3.07</h3>
+            <h3>GPA = 3.27</h3>
             <div class="col-md-6">
               <h5>Semester 1</h5>
               <table class="table">
@@ -701,8 +701,8 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Enterprise Application Development</td>
-                    <td>B</td>
+                    <td>Enterprise Application Development 1</td>
+                    <td>B-</td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -727,7 +727,7 @@
                   <tr>
                     <td>6</td>
                     <td>Project</td>
-                    <td>B</td>
+                    <td>B+</td>
                   </tr>
                 </tbody>
               </table>
@@ -746,33 +746,28 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>NA</td>
-                    <td>NA</td>
+                    <td>Enterprise App Development 2</td>
+                    <td>C</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>NA</td>
-                    <td>NA</td>
+                    <td>Algorithms & Computation</td>
+                    <td>B+</td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>NA</td>
-                    <td>NA</td>
+                    <td>Enterprise Database Technologies</td>
+                    <td>B+</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>NA</td>
-                    <td>NA</td>
-                  </tr>
-                  <tr>
+                    <td>Computational Theory</td>
+                    <td>A</td>
+                  </tr>                  
+				  <tr>
                     <td>5</td>
-                    <td>NA</td>
-                    <td>NA</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>NA</td>
-                    <td>NA</td>
+                    <td>Project</td>
+                    <td>B+</td>
                   </tr>
                 </tbody>
               </table>
@@ -1218,21 +1213,32 @@
               </div>
               <div class="col-md-6">
                 <h2>4th Year Project - Cloud Web App</h2>
-                <p>
-                  Project will be completed by May 2018. Written in C# and using Azure, I will create a video sharing application which uses
-                  Azure Media Services to stream media to devices. It will be a web app (ASP.Net MVC) and an Azure cloud
-                  service backend (Web API) which uses a media services account.
+				<p><b>Grade: B+</b></p>
+				<p><b>Technologies Used</b></p>
+				<p>Entity Framework version 6.2.0, MVC 5, Azure Server, Azure SQL Database, App Service, Storage Account, Media Services (Streaming)
+				, Media Services SDK and REST API.</p>
+                <p><b>About</b></p>
+				<p>
+                  The project consists of various aspects of a media streaming application. 
+				  Users that register for the app are able to upload video that is then streamed to all other users. 
+				  Using Media Services SDK and a storage connection string files are ingested into an asset, 
+				  the asset can be video, images, audio and other media formats. 
+				  The content is stored securely in the cloud for further processing. 
+				  Video assets are encoded into a set of adaptive bitrate MP4 files and a URL is produced for that asset, 
+				  the content is then ready for Steady Streaming which is used for playback by the application. 
                 </p>
                 <p>
-                  The application will be for people who enjoy watching videos and sharing their favourite videos with other people. Each user
-                  will use the app to share videos with each other. I am hoping to create many different functions within
-                  the application; I will also create a piece of functionality that allowed users to comment on videos.
+                  The app was programmed in C# using Entity Framework version 6, it was written as an MVC 5 code first application. 
+				  The App is hosted in Azure App Service, the Database an Azure SQL database. Media is uploaded to Azure Media Services 
+				  using the SDK and REST API and stored in Azure Storage Service. Uploaded media is encoded using the Azure Media Encoder.
                 </p>
                 <p>
-                  How media is streamed has always interested me, I spend at least an hour every day on YouTube, Facebook or Instagram looking
-                  at videos and I was always interested in building my own application that allows users to share their own
-                  videos. The main users of the application will be people of all ages but I feel my application will be
-                  for people who use social media a lot so I will probably be targeting the 18 – 39 age groups.
+                  Content is shared with all other users of the app (unless a user specifies privacy on the video). 
+				  They can view other user’s content, like their videos, subscribe to their channel, comment on videos and reply 
+				  to others using the comment forum and also search and filter for certain videos using built in functionality. 
+				  Users are also able to perform all of the necessary CRUD functionality on their own content. 
+				  One dynamic feature in the application is using the data in the database users are given a recommended list of 
+				  videos based off their searches.
                 </p>
               </div>
             </div>
