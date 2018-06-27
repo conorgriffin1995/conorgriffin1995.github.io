@@ -1092,8 +1092,34 @@
           <h3>Year</h3>
         </div>
       </div>
+	  
+	  <div class="row">
+        <div class="col-lg-3">
+          <img src="Images/Deloitte.jpg" alt="Deloitte image" height="100%" width="100%" width="100%">
+        </div>
+        <div class="col-lg-3">
+          <p>Deloitte</p>
+          <p>I started working for Deloitte in June 2018. I am working as a Tech Consultant in Systems Integration for Deloitte. At the moment 
+		  the client I am working with is the Department of Social Protection, I am working in the Development Operations team and assisting the teams 
+		  with day to day technical tasks such as the build and deployments of the Departments digital services.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>Tech Consultant</p>
+        </div>
 
-      <div class="row">
+        <div class="col-lg-3">
+          <p>June 5th 2018 – Current Position</p>
+        </div>
+      </div>
+	  
+	  <br />
+      <br />
+      <button class="btn btn-primary" onclick="ShowMoreWork()">Show More/Less</button>
+      <br />
+      <br />
+
+      <div class="row" id="moreWork">
         <div class="col-lg-3">
           <img src="Images/DSP.png" alt="it tallaght image" height="100%" width="100%" width="100%">
         </div>
@@ -1113,13 +1139,9 @@
         </div>
       </div>
 
-      <br />
-      <br />
-      <button class="btn btn-primary" onclick="ShowMoreWork()">Show More/Less</button>
-      <br />
-      <br />
+      
 
-      <div class="row" id="moreWork">
+      <div class="row" id="moreWork2">
         <div class="col-lg-3">
           <img src="Images/supervalu.jpg" alt="it tallaght image" height="100%" width="100%">
         </div>
@@ -1626,10 +1648,13 @@
   <script>
     function ShowMoreWork() {
       var x = document.getElementById("moreWork");
-      if (x.style.display === "none") {
+	  var y = document.getElementById("moreWork2");
+      if (x.style.display === "none" && y.style.display === "none") {
         x.style.display = "block";
+		y.style.display = "block";
       } else {
         x.style.display = "none";
+		y.style.display = "none";
       }
     }
   </script>
